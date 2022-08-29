@@ -1,5 +1,3 @@
-package com.flatiron.bird;
-
 public class Pigeon extends Bird {
 
     Pigeon() {

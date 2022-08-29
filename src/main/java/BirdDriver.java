@@ -1,8 +1,6 @@
-package com.flatiron.bird;
-
 public class BirdDriver {
     public static void main(String[] args) {
-        Bird userBird = getUserBird();
+        FlyingBird userBird = getUserBird();
         int monsterSpeed = getMonsterSpeed();
 
         int birdSpeed = userBird.fly();
@@ -15,9 +13,9 @@ public class BirdDriver {
 
     /**
      * Prompt the user for the type of bird they wish to play the game with
-     * @return Bird - the bird the user selected
+     * @return FlyingBird - the bird the user selected
      */
-    public static Bird getUserBird() {
+    private static FlyingBird getUserBird() {
         // Your code here
     }
 
@@ -25,7 +23,7 @@ public class BirdDriver {
      * Prompt the user for speed of the monster
      * @return int - the speed in miles per hour that the user entered
      */
-    public static int getMonsterSpeed() {
+    private static int getMonsterSpeed() {
         // Your code here
     }
 }

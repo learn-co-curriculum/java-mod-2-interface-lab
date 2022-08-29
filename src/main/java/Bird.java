@@ -1,5 +1,3 @@
-package com.flatiron.bird;
-
 public abstract class Bird {
     private String name;
 

@@ -31,8 +31,6 @@ specific type anymore.
 Consider the following starter code to help you program the game:
 
 ```java
-package com.flatiron.bird;
-
 public abstract class Bird {
    private String name;
 
@@ -57,8 +55,6 @@ public abstract class Bird {
 ```
 
 ```java
-package com.flatiron.bird;
-
 public class Parrot extends Bird {
 
    Parrot() {
@@ -78,8 +74,6 @@ public class Parrot extends Bird {
 ```
 
 ```java
-package com.flatiron.bird;
-
 public class Puffin extends Bird {
 
    Puffin() {
@@ -94,8 +88,6 @@ public class Puffin extends Bird {
 ```
 
 ```java
-package com.flatiron.bird;
-
 public class Pigeon extends Bird {
 
     Pigeon() {
@@ -110,8 +102,6 @@ public class Pigeon extends Bird {
 ```
 
 ```java
-package com.flatiron.bird;
-
 public interface CanFly {
 
     // Parrots can fly up to 50 miles per hour
@@ -125,11 +115,9 @@ been provided. You will need to fill in the rest.
 
 
 ```java
-package com.flatiron.bird;
-
 public class BirdDriver {
    public static void main(String[] args) {
-      Bird userBird = getUserBird();
+      FlyingBird userBird = getUserBird();
       int monsterSpeed = getMonsterSpeed();
 
       int birdSpeed = userBird.fly();
@@ -142,9 +130,9 @@ public class BirdDriver {
 
    /**
     * Prompt the user for the type of bird they wish to play the game with
-    * @return Bird - the bird the user selected
+    * @return FlyingBird - the bird the user selected
     */
-   public static Bird getUserBird() {
+   private static FlyingBird getUserBird() {
         // Your code here
    }
 
@@ -152,7 +140,7 @@ public class BirdDriver {
     * Prompt the user for speed of the monster
     * @return int - the speed in miles per hour that the user entered
     */
-   public static int getMonsterSpeed() {
+   private static int getMonsterSpeed() {
         // Your code here
    }
 }
