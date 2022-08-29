@@ -1,10 +1,5 @@
 public abstract class Bird {
     private String name;
-
-    Bird() {
-        this.name = "unknown";
-    }
-
     public String getName() {
         return name;
     }
